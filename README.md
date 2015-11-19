@@ -1,4 +1,4 @@
-This is fork from the original nyaascrape hosted here: https://code.ivysaur.me/nyaascrape.html
+This is a fork from the original nyaascrape hosted here: https://code.ivysaur.me/nyaascrape.html
 
 This fork adds support for MySQL.
 
