@@ -322,6 +322,7 @@ class DB_Mysql extends DB_Sqlite {
                 date INT,
                 seeders INT,
                 leechers INT,
+                downloads INT,
                 filesize INT,
                 description TEXT,
                 record_updated INT,
