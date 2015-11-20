@@ -15,7 +15,10 @@ Usage: nyaascrape [options]
 Options:
   -b, --batches {number}         Number of batches to download
   -c, --count {number}           Number of torrents to download per batch
-  --database {filename}          Select output file
+  --database {filename}          Select output file used in sqlite
+  --mysql {dsn}                  Selects mysql as storage instead of sqlite
+  --username {username}          Username used for mysql connection
+  --password {password}          Password used for mysql connection
   --get-latest-id                Find the most recent Torrent ID on site
   --help                         Display this message
   --no-torrents                  Download entries only, no torrent files
@@ -26,6 +29,14 @@ Options:
   --update                       Automatically set -s/-c/-b options to get all
                                    the latest torrent entries
   --url {http://.../}            Set custom nyaa URL
+```
+
+## Saving to mysql
+
+Saving to mysql can now be done via a command like:
+
+```
+nyaascrape.php --mysql 'dbname=nyaascrape' --username nyaa --password meow --update
 ```
 
 # Web interface
